@@ -25,7 +25,7 @@ body {
 /* shared style */
 .section-title{
     color: rgba(19, 19, 19, 1);
-    font-size: 3rem;
+    font-size: 1.8rem;
     line-height: auto;
     font-weight: bold;
 }
@@ -40,7 +40,7 @@ body {
 
 .section-text{
     color: rgba(114, 114, 114, 1);
-    font-size: 1rem;
+    font-size: .75rem;
     line-height: 26px;
     font-weight: normal;
 
@@ -49,7 +49,7 @@ body {
 .btn-primary{
     background-color: rgba(255, 144, 14, 1);
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
     padding: 20px 25px;
     border-radius: 8px;
@@ -78,7 +78,7 @@ nav,.hero-section{
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     line-height: auto;
     color: rgba(19, 19, 19, 1);
@@ -110,7 +110,7 @@ nav {
 .nav-links li a {
     text-decoration: none;
     color:rgba(66, 66, 66, 1);
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 26px;
     font-weight: 500;
 
@@ -172,8 +172,8 @@ nav {
 
 .fact {
     border: 1px solid rgba(255, 144, 14, 1);
-    width: 240px;
-    height: 240px;
+    width: 200px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,11 +184,60 @@ nav {
 .card {
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    padding: 0 20px;
    
 }
 
 .fact div img {
     margin: 0 auto;
+}
+
+.sponsors-title{
+    color: rgba(19, 19, 19, 1);
+    font-size: 1.8rem;
+    line-height: auto;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.sponsors-company {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+
+}
+.specific-width{
+    max-width: 540px;
+    margin: 0 auto;
+    
+}
+
+.spon-image {
+    filter: grayscale(100%);
+    width: 50%;
+    height: 50%;
+    margin-top: 30px;
+
+}
+
+footer {
+    background-color: rgba(255, 244, 231, 1);
+    height: 100px;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 130px auto;
+    
+}
+
+.footer-text {
+    color:rgba(66, 66, 66, 1);
+    font-size: 1rem;
+    line-height: 26px;
+    font-weight: 500;
+    text-align: center;
+
 }
 
 
@@ -199,8 +248,14 @@ nav {
         flex-direction: column;
     }
 
-    .image-div{
+    .image-div, .card {
         grid-template-columns: repeat(1,1fr);
+    }
+
+
+    .card {
+        gap: 20px;
+        padding: 0;
     }
 
  
